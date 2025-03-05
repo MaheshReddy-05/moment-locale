@@ -7,6 +7,9 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "build:s": "webpack --mode=production",
+    "build:stats": "ng build --configuration development --stats-json",
+"analyze": "webpack-bundle-analyzer dist/multi-lang-app/stats.json",
     "serve:ssr:multi-lang-app": "node dist/multi-lang-app/server/server.mjs"
   },
   "private": true,
@@ -25,14 +28,19 @@
     "@fullcalendar/daygrid": "^6.1.15",
     "express": "^4.18.2",
     "fullcalendar": "^5.11.5",
+    "i": "^0.3.7",
     "moment": "^2.30.1",
+    "moment-es6": "^1.0.0",
+    "moment-locales-webpack-plugin": "^1.2.0",
     "ngx-bootstrap": "^19.0.2",
     "ngx-moment": "^6.0.2",
+    "npm": "^11.1.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
+    "@angular-builders/custom-webpack": "^19.0.0",
     "@angular-devkit/build-angular": "^19.1.6",
     "@angular/cli": "^19.1.6",
     "@angular/compiler-cli": "^19.1.0",
@@ -45,6 +53,9 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.7.2"
+    "sass": "^1.85.1",
+    "typescript": "~5.7.2",
+    "webpack-bundle-analyzer": "^4.10.2",
+    "webpack-cli": "^6.0.1"
   }
 }

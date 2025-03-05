@@ -9,7 +9,7 @@ import { MomentComponent } from './components/moment/moment.component';
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  styleUrls: ['./app.component.css'],
   imports: [NgIf, NgFor, FormsModule, CalendarComponent, MomentComponent],
 })
 export class AppComponent {
