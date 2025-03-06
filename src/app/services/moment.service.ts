@@ -18,7 +18,7 @@ export class MomentService {
     try {
       // Dynamically import the Moment.js locale
       debugger
-      await import(`moment-locale/${lang}.js`);
+      await import(`moment/locale/${lang}`);
       moment.locale(lang);
       console.log(`Moment.js locale set to: ${lang}`);
     } catch (error) {
